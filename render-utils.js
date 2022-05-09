@@ -1,7 +1,7 @@
 export function renderListItem(animal) {
     const div = document.createElement('div');
     const a = document.createElement('a');
-    a.href = `./animal-detail/?id=${animal.id}`;
+    a.href = `./farm-animal/?id=${animal.id}`;
     a.textContent = `More Info`;
     div.classList.add('animal');
     div.style.top = animal.top;
