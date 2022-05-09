@@ -5,24 +5,23 @@ const param = new URLSearchParams(window.location.search);
 
 const farmAnimal = findById(param.get('id'), animals);
 
-
+const image = document.getElementById('img');
+const paragraph = document.getElementById('para');
 const animalName = document.getElementById('animal-name');
 animalName.textContent = farmAnimal.name;
 
-export function () {
-    const div = document.createElement('div');
-    div.classList.add('');
+image.src = `../assets/${farmAnimal.type}.svg`;
+paragraph.textContent = farmAnimal.says;
 
-    const h1 = document.createElement('h1');
-    h1.textContent = ;
+    //const div = document.createElement('div');
+ //   div.classList.add('');
 
-    const img = document.createElement('img');
-    img.src = pets.image;
+   // const img = document.createElement('img');
+    //img.src = `../assets/${farmAnimal.type}.svg`;
 
-    const p = document.createElement('p');
-    p.textContent = `${pets.name} is ${pets.age} and is a ${pets.breed}`;
+  //  const p = document.createElement('p');
+   // p.textContent = `${farmAnimal.name} is a ${farmAnimal.type} and says ${farmAnimal.says}`;
+   // div.append(img, p,);
 
-    }
+
     
-    div.append(h1, img, p, ul);
-    return div;
